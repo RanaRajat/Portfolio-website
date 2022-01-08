@@ -2,45 +2,54 @@
     
     
     margin-top: 4rem;
-    width: 8rem;
-    height: 10rem;
+    width: 7rem;
+    height: 9rem;
     margin-left: 1rem;
-    
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(10, 10, 10,0.1);
 }
 .SkillClass{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% ;
     grid-gap:3rem ;
-
+    
     
   
 }
-
-.htmlImg{
-
-    width: 7rem;
-    height: 10rem;
-
-
+h3{
+    text-align: center;
 }
-.expressImg{
-   
-}
-
-.jsImg{
+@media only screen and (max-width: 600px) {
+    .SkillClass{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap:1rem ;
     
-}
-.mongoImg{
-    
+        
+      
+    }
+  }
 
-}
-.reduxImg{
+  @media only screen and (max-width: 450px) {
+    .SkillClass{
+        display: grid;
+        grid-template-columns: 40% 40% ;
+        grid-gap:1rem ;
     
-}
-.nodeImg{
-    
-}
-.cssImg{
-    
+        
+      
+    }
+  }
 
-}
+  @media only screen and (max-width: 270px) {
+    .SkillClass{
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-gap:1rem ;
+        
+        
+      
+    }
+    
+  }

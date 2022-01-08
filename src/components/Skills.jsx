@@ -19,14 +19,14 @@ export const Skills = ()=>{
        
         
 
-        <div className='htmlImg'>< ImHtmlFive /></div>
-        <div className="jsImg"><SiCss3 /></div>
-        <div className='cssImg'><FaReact/></div>
-        <div className='reactjsImg'><SiRedux/></div>
-        <div className='nodejsImg'><FaNodeJs/></div>
-        <div className='reduxImg'><SiExpress/></div>
-        <div className='expressImg'><DiMongodb/></div>
-        <div className='mongoImg'><DiJavascript1/></div>
+        <div className='htmlImg'>< ImHtmlFive size="7rem"/><h3>HTML</h3></div>
+        <div className="jsImg"><SiCss3 size="7rem"/><h3>Javascript</h3></div>
+        <div className='cssImg'><FaReact size="7rem"/><h3>CSS</h3></div>
+        <div className='reactjsImg'><SiRedux size="7rem"/><h3>ReactJs</h3></div>
+        <div className='nodejsImg'><FaNodeJs size="7rem"/><h3>NodeJs</h3></div>
+        <div className='reduxImg'><SiExpress size="7rem"/><h3>Redux</h3></div>
+        <div className='expressImg'><DiMongodb size="7rem"/><h3>Express</h3></div>
+        <div className='mongoImg'><DiJavascript1 size="7rem"/><h3>MongoDb</h3></div>
 
 
 
