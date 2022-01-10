@@ -14,17 +14,17 @@ const Card = (props) => {
         </CardText>
         <ButtonArea>
           {props.link_one ? (
-            <a className="link1" href={props.link_one}>
+            <a className="link1" href={props.link_one} target="_blank"   rel="noopener noreferrer">
               {props.link_one_text}
             </a>
           ) : null}
           {props.link_two ? (
-            <a className="link2" href={props.link_two}>
+            <a className="link2" href={props.link_two} target="_blank"   rel="noopener noreferrer">
               {props.link_two_text}
             </a>
           ) : null}
           {props.link_three ? (
-            <a className="link3" href={props.link_three}>
+            <a className="link3" href={props.link_three} target="_blank"   rel="noopener noreferrer">
               {props.link_three_text}
             </a>
           ) : null}
