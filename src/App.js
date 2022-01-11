@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import styled from 'styled-components';
 
-import { Switch, Route, useLocation } from 'react-router-dom';
+
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -11,7 +11,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 
-import NotFound from './components/NotFound';
+
 import GlobalStyles from './styles/GlobalStyle';
 
 import { ThemeProvider } from 'styled-components';
@@ -51,55 +51,38 @@ const App = () => {
   const [theme, setTheme] = useState('light');
 
   const [isOpen, setIsOpen] = useState(false);
-  let path = useLocation().pathname;
-  const location = path.split('/')[1];
+
   
-  useEffect(() => {
-    let title = path.substring(1);
-    if (!title) {
-      title = 'home';
-    }
+  
 
-    if (title !== 'about' && title !== 'projects' && title !== 'home') {
-      title = 'Portfolio';
-    }
-    document.title =
-      title[0].toUpperCase() + title.slice(1) + ' | ' + 'Rajat';
-  });
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [path]);
 
   return (
     <div>
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         
-        <Container location={location}>
+        <Container >
           <Navbar
             isOpen={isOpen}
             setIsOpen={setIsOpen}
             theme={theme}
             setTheme={setTheme}
             scroll={scroll}
-            location={location}
+          
           />
           <main>
             <Content isOpen={isOpen}>
-              <Switch>
-                <Route exact path="/projects" component={Projects} />
-                <Route path="/about" component={About} />
-                <Route exact path="/" component={Home} />
-                <Route  path="/skills" component={Skills} />
-                <Route path="/resume" component={ResumeNew}/>
-                <Route path="/contact" component={Contact}/>
-
-                <Route component={NotFound} />
-              </Switch>
+            <section id='home'><Home/></section>
+             <section id='projects'><Projects /></section>
+             <section id='skills'><Skills/></section>
+             <section id='about'><About/></section>
+             <section id='resume'><ResumeNew/></section>
+            <section id='contact'><Contact/></section>
+      
+              
             </Content>
           </main>
-          <Footer location={location} />
+          <Footer />
         </Container>
       </ThemeProvider>
     </div>

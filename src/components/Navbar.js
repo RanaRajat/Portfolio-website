@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { IoSunny, IoMoon } from 'react-icons/io5';
 
-import { NavLink } from 'react-router-dom';
+
 
 const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
   const themeToggler = () => {
@@ -39,12 +39,12 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
   };
 
   return (
-    <Parent ref={node} scroll={scroll} location={location}>
+    <Parent ref={node} scroll={scroll} >
       <Nav>
         <Hamburger
           onClick={() => setIsOpen(!isOpen)}
           scroll={scroll}
-          location={location}
+         
         >
           <span />
           <span />
@@ -52,61 +52,60 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
         </Hamburger>
         <Menu isOpen={isOpen}>
           <MenuLink
-            exact
-            to="/"
+            
             onClick={closeMenu}
             scroll={scroll}
-            path={location}
+          
           >
-            Home
+           <a href='#home'>Home</a> 
           </MenuLink>
           <MenuLink
-            exact
-            to="/projects"
+         
             onClick={closeMenu}
             scroll={scroll}
-            path={location}
+            
           >
-            Projects
+           <a href='#projects'>Projects</a> 
+           
           </MenuLink>
          
           <MenuLink
-            exact
-            to="/skills"
+           
             onClick={closeMenu}
             scroll={scroll}
-            path={location}
+            
           >
-            Skills
+           <a href='#skills'>Skills</a> 
+            
           </MenuLink>
           <MenuLink
-            exact
-            to="/about"
+           
             onClick={closeMenu}
             scroll={scroll}
-            path={location}
+            
           >
-            About
+           <a href='#about'>About</a> 
+           
           </MenuLink>
  
           <MenuLink
-            exact
-            to="/resume"
+            
             onClick={closeMenu}
             scroll={scroll}
-            path={location}
+          
           >
-            Resume
+           <a href='#resume'>Resume</a> 
+            
           </MenuLink>
 
           <MenuLink
-            exact
-            to="/contact"
+            
             onClick={closeMenu}
             scroll={scroll}
-            path={location}
+        
           >
-           Contact
+           <a href='#contact'>Contact</a> 
+           
           </MenuLink>
           
           {theme === 'light' ? (
@@ -131,6 +130,7 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
 };
 
 const Parent = styled.header`
+scroll-behavior: smooth;
   transition: background-color 0.5s, box-shadow 0.5s;
   .icon {
     border-radius: 100%;
@@ -211,7 +211,7 @@ const Hamburger = styled.div`
   }
 `;
 
-const MenuLink = styled(NavLink)`
+const MenuLink = styled.div`
   padding: 1.1rem 0rem;
   width: 6rem;
   cursor: pointer;
@@ -227,7 +227,10 @@ const MenuLink = styled(NavLink)`
   }
   font-weight: 600;
   font-size: 1rem;
-
+ a{
+   color:Black;
+   text-decoration:none;
+ }
   @media (max-width: 40rem) {
     width: 100%;
   }

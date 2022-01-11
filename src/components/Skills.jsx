@@ -13,7 +13,8 @@ import {DiJavascript1} from "react-icons/di";
 
 export const Skills = ()=>{
     return (
-      <div>
+      <div className='Skillmain'>
+       <div className='title'><h1>Skills</h1></div> 
         <div className='SkillClass'>
           
        

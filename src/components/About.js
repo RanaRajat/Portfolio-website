@@ -10,9 +10,8 @@ const About = () => {
       <Text>
         <p>
           Hi, I'm <strong>Rajat</strong>.
-          My interest in coding developed from my school days when I was in class 11 . At that time, I was studying a subject called Information practices in which I learnt some basics of coding and built some small projects such as a calculator using Net Beans. After school, I pursued my B.E in Information Technology . During my college days, I realized that I was extremely interested in building and designing websites. Hence, I joined Masai school to learn web designing and web development.
+         
     
-
           I am a Determined and enthusiastic aspiring full-stack developer . I am eager to utilise my skills and upgrade my knowledge by building user-friendly platforms. I love to solve problems related to DSA .
 
           Besides coding, my interests include distant running , cycling and playing chess . I also love to listen to music and watch movies and web series.
@@ -21,7 +20,7 @@ const About = () => {
 
          Technical skills: JS, MongoDB, Express.js, Node.js, HTML, CSS, React.js.
 
-         While learning MERN stack I built many projects and my projects can be found on GitHub
+         My projects can be found on GitHub and on this site as well.
         .
         </p>
       
@@ -48,6 +47,7 @@ const Container = styled.div`
       padding-top: 3rem;
     }
   }
+  margin-bottom:13rem;
 `;
 
 const Text = styled.div`

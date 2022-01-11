@@ -17,7 +17,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
         title="Look through my Github profile"
       >
         <FaGithub size="8rem" className="icon" />
-        <span className="icontext">Github</span>
+        
       </a>
     </div>
     <div className="iconcontainer">
@@ -29,7 +29,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
         title="Look through my Github profile"
       >
         <FaLinkedin size="8rem" className="icon" />
-        <span className="icontext">LinkedIn</span>
+        
       </a>
     </div>
     <div className="iconcontainer">
@@ -41,7 +41,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
         title="Look through my Github profile"
       >
         <FaEnvelope size="8rem" className="icon" />
-        <span className="icontext">Email</span>
+       
       </a>
     </div>
     
