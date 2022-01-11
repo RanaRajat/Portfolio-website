@@ -9,6 +9,8 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import About from './components/About';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
+
 import NotFound from './components/NotFound';
 import GlobalStyles from './styles/GlobalStyle';
 
@@ -91,6 +93,8 @@ const App = () => {
                 <Route exact path="/" component={Home} />
                 <Route  path="/skills" component={Skills} />
                 <Route path="/resume" component={ResumeNew}/>
+                <Route path="/contact" component={Contact}/>
+
                 <Route component={NotFound} />
               </Switch>
             </Content>

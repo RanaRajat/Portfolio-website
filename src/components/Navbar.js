@@ -98,6 +98,16 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
           >
             Resume
           </MenuLink>
+
+          <MenuLink
+            exact
+            to="/contact"
+            onClick={closeMenu}
+            scroll={scroll}
+            path={location}
+          >
+           Contact
+          </MenuLink>
           
           {theme === 'light' ? (
             <IoMoon
@@ -105,6 +115,8 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
               className="icon"
               onClick={() => themeToggler()}
             />
+
+            
           ) : (
             <IoSunny
               size="1.5rem"
