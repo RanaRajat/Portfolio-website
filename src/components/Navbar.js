@@ -98,7 +98,7 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
             
           </MenuLink>
 
-          {/* <MenuLink
+          <MenuLink
             
             onClick={closeMenu}
             scroll={scroll}
@@ -106,7 +106,7 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
           >
            <a href='#contact'>Contact</a> 
            
-          </MenuLink> */}
+          </MenuLink>
           
           {theme === 'light' ? (
             <IoMoon

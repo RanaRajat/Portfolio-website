@@ -48,12 +48,12 @@ const App = () => {
     });
   }, []);
 
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   const [isOpen, setIsOpen] = useState(false);
 
   
-  
+  //hjbnm
 
 
   return (
@@ -77,7 +77,7 @@ const App = () => {
              <section id='skills'><Skills/></section>
              <section id='about'><About/></section>
             
-            {/* <section id='contact'><Contact/></section> */}
+            <section id='contact'><Contact/></section>
       
               
             </Content>

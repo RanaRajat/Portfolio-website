@@ -86,4 +86,3 @@ export const lightTheme = {
     footerStart: '#E6EBE0',
   };
   
-//#111825
