@@ -13,7 +13,7 @@ const Projects = () => {
           img={require('../images/freshly.png')}
           title="Freshly Clone "
           description="Freshly is a New York-based prepared meal delivery company that delivers throughout the United States (solo project)"
-          technologies="Javascript - HTML - CSS - DOM"
+          technologies="Javascript - HTML - CSS "
           link_two="https://frosty-neumann-1b644b.netlify.app"
           link_three="https://github.com/RanaRajat/freshly-website-clone"
           link_two_text="Visit"
@@ -35,11 +35,11 @@ const Projects = () => {
           img={require('../images/myglamm.png')}
           title="My Glamm Clone"
           description="MyGlamm is a beauty brand that offers an online beauty products marketplace (Cloned by team of 3)"
-          technologies="Javascript - HTML - CSS - DOM "
+          technologies="Javascript - HTML - CSS - MongoDb - Express.js -Node.js -Mongoose "
           technologies2=""
-          link_two=""
-          link_three="https://github.com/suvamAdhikary/MyGlamm"
-          link_two_text=""
+          link_two="https://myglamm-clone.herokuapp.com/"
+          link_three="https://github.com/RanaRajat/MyGlamm-with-Backend"
+          link_two_text="Visit"
           link_three_text="Github"
         />
       </Grid>

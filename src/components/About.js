@@ -26,7 +26,7 @@ const About = () => {
       
 
         <p>
-          <strong>Feel free to contact me anytime!</strong>
+          <strong>Feel free to contact me anytime. Details are mentioned below:</strong>
         </p>
       </Text>
     </Container>

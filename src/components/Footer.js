@@ -52,14 +52,14 @@ const Container = styled.footer`
 `;
 
 const Copyright = styled.div`
-  opacity: 0.5;
+opacity: 0.5;
   color: ${(props) =>
     props.location ? props.theme.footer : props.theme.footerStart};
 `;
 
 const Social = styled.div`
   a {
-    opacity: 0.5;
+    // opacity: 0.5;
     color: ${(props) =>
       props.location ? props.theme.footer : props.theme.footerStart};
     &:hover {

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { IoSunny, IoMoon } from 'react-icons/io5';
 
-
+import resume from "../assets/resume.pdf";
 
 const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
   const themeToggler = () => {
@@ -37,7 +37,7 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
       setIsOpen(false);
     }
   };
-
+  const resumeLink = resume;
   return (
     <Parent ref={node} scroll={scroll} >
       <Nav>
@@ -75,7 +75,7 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
             scroll={scroll}
             
           >
-           <a href='#skills'>Skills</a> 
+           <a href='#skills' >Skills</a> 
             
           </MenuLink>
           <MenuLink
@@ -94,11 +94,11 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
             scroll={scroll}
           
           >
-           <a href='#resume'>Resume</a> 
+           <a href={resumeLink} target="_blank"   rel="noopener noreferrer">Resume</a> 
             
           </MenuLink>
 
-          <MenuLink
+          {/* <MenuLink
             
             onClick={closeMenu}
             scroll={scroll}
@@ -106,7 +106,7 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
           >
            <a href='#contact'>Contact</a> 
            
-          </MenuLink>
+          </MenuLink> */}
           
           {theme === 'light' ? (
             <IoMoon
@@ -130,7 +130,9 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
 };
 
 const Parent = styled.header`
-scroll-behavior: smooth;
+color: ${(props) =>
+  props.location ? props.theme.footer : props.theme.footerStart};
+a{scroll-behavior: smooth;}
   transition: background-color 0.5s, box-shadow 0.5s;
   .icon {
     border-radius: 100%;
@@ -228,7 +230,8 @@ const MenuLink = styled.div`
   font-weight: 600;
   font-size: 1rem;
  a{
-   color:Black;
+  color: ${(props) =>
+    props.location ? props.theme.footer : props.theme.footerStart};
    text-decoration:none;
  }
   @media (max-width: 40rem) {

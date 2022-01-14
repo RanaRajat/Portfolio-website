@@ -5,9 +5,10 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
  const Contact = ()=>{
   return(
-      
+      <div className='contactDiv'>
+         <h2 className='title'>Get in touch</h2> 
     <Social>
-        
+     
     <div className="iconcontainer">
       <a
         className="same"
@@ -16,7 +17,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
         rel="noopener noreferrer"
         title="Look through my Github profile"
       >
-        <FaGithub size="8rem" className="icon" />
+        <FaGithub size="2rem" className="icon" />
         
       </a>
     </div>
@@ -28,7 +29,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
         rel="noopener noreferrer"
         title="Look through my Github profile"
       >
-        <FaLinkedin size="8rem" className="icon" />
+        <FaLinkedin size="2rem" className="icon" />
         
       </a>
     </div>
@@ -40,17 +41,19 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
         rel="noopener noreferrer"
         title="Look through my Github profile"
       >
-        <FaEnvelope size="8rem" className="icon" />
+        <FaEnvelope size="2rem" className="icon" />
        
       </a>
     </div>
     
   </Social>
+  </div>
   );
 }
 
 
 const Social = styled.div`
+
 width:70%;
 margin:auto;
 

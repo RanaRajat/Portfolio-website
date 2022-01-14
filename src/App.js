@@ -17,7 +17,7 @@ import GlobalStyles from './styles/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme.js';
 import {Skills} from "./components/Skills";
-import ResumeNew from "./components/Resume";
+
 
 const Container = styled.div`
   margin: 0;
@@ -76,8 +76,8 @@ const App = () => {
              <section id='projects'><Projects /></section>
              <section id='skills'><Skills/></section>
              <section id='about'><About/></section>
-             <section id='resume'><ResumeNew/></section>
-            <section id='contact'><Contact/></section>
+            
+            {/* <section id='contact'><Contact/></section> */}
       
               
             </Content>

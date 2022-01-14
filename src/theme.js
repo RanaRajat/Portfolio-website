@@ -43,14 +43,14 @@ export const lightTheme = {
   };
   
   export const darkTheme = {
-    background: '#5D576B',
-    backgroundStart: '#5D576B',
+    background: '#111825',
+    backgroundStart: '#111825',
     text: '#E6EBE0',
     textStart: '#E6EBE0',
     headerUnderline: '#ED6A5A',
   
-    navbar: '#E6EBE0',
-    navbarStart: '#5D576B',
+    navbar: '#111825',
+    navbarStart: '#111825',
   
     socialStart: '#E6EBE0',
     socialStartHover: '#ED6A5A',
@@ -86,3 +86,4 @@ export const lightTheme = {
     footerStart: '#E6EBE0',
   };
   
+//#111825

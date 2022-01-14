@@ -9,7 +9,7 @@ const Card = (props) => {
         <CardText>
           <h2 className="card_title">{props.title}</h2>
           <p className="card_description">{props.description}</p>
-          <p className="technologies">{props.technologies}</p>
+          <p className="technologies"><h3>Tech-Stacks:</h3>{props.technologies}</p>
           <p className="technologies2">{props.technologies2}</p>
         </CardText>
         <ButtonArea>
@@ -58,7 +58,7 @@ const Container = styled.div`
   .card_description {
     padding: 0.5rem 0;
     font-size: 0.9rem;
-    font-style: italic;
+   
   }
 
   .technologies {
@@ -84,6 +84,9 @@ const Container = styled.div`
       color: ${(props) => props.theme.cardButtonTextHover};
       border: 1px solid ${(props) => props.theme.cardButtonBorderHover};
     }
+  }
+  p>h3{
+    text-align:left;
   }
 `;
 
