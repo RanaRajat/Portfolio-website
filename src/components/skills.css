@@ -7,21 +7,26 @@
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(10, 10, 10,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
 }
 .SkillClass{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% ;
+    grid-template-columns: 23% 23% 23% 23% ;
     grid-gap:3rem ;
     margin: auto;
-    width: 90%;
    
-    
+   width: 98%;
+
+  margin-bottom: 6rem;
   
 }
 .Skillmain{
     margin-top: 12rem;
     margin-bottom: 13rem;
+    
+    width: 75%;
+    margin: auto;
 }
 h3{
     text-align: center;

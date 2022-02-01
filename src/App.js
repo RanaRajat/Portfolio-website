@@ -33,7 +33,7 @@ const Content = styled.div`
   margin-bottom: -3.5rem;
   z-index: 10;
   filter: ${(props) => (props.isOpen ? 'blur(0.2rem)' : 'none')};
-  max-width: 60rem;
+  // max-width: 60rem;
   margin: 0 auto;
   margin-top: 3.4rem;
 `;

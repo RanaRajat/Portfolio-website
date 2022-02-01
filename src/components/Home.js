@@ -7,17 +7,81 @@ const Container = styled.div`
   height: calc(100vh - 7rem);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width:60%;
+  margin:auto;
+ 
+  @media (max-width: 1000px) {
+     
+    
+    width:80%;
+    margin:auto;
+
+  }
+  @media (max-width: 1200px) {
+     
+    
+    width:85%;
+    margin:auto;
+    justify-content:center;
+
+  }
+
+  
+   
+  .image-cropper {
+   
+    box-sizing: border-box;
+    height: 15rem;
+    width: 14rem;
+    background-image: url(${img});
+    background-size: cover;
+
+    @media (max-width: 820px) {
+     
+      display:none;
+
+    }
+    @media (max-width: 830px) {
+     
+      height: 6rem;
+    width: 5rem;
+      
+
+
+    }
+    @media (max-width: 1000px) {
+     
+      height: 9rem;
+    width: 8rem;
+      
+
+
+    }
+    @media (max-width: 1200px) {
+     
+      height: 12rem;
+      width: 11rem;
+      
+
+
+    }
+    
+
+    border-radius: 50%;
+    border: solid ${(props) => props.theme.menuLinkActive} 0.2rem;
+  }
+
+  
 `;
 
 const Home = () => {
   return (
     <Container>
+       <div className="image-cropper"></div>
       <Introduction>
         <ProfileCard>
-          <div className="image-cropper">
-            
-          </div>
+        <div className="image-cropper"></div>
           <div className="profile-text">
             <div className="hi">Hi! I'm</div>
             <h1>Rajat&nbsp;Kumar</h1>
@@ -45,7 +109,7 @@ const Home = () => {
               href="https://www.linkedin.com/in/rajat-kumar-213184210"
               target="_blank"
               rel="noopener noreferrer"
-              title="Look through my Github profile"
+              title="Look through my Linked In profile"
             >
               <FaLinkedin size="1.5rem" className="icon" />
               <span className="icontext">LinkedIn</span>
@@ -57,7 +121,7 @@ const Home = () => {
               href="mailto:rajatrana.rk@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              title="Look through my Github profile"
+              title="Look through my Email"
             >
               <FaEnvelope size="1.5rem" className="icon" />
               <span className="icontext">Email</span>
@@ -72,8 +136,9 @@ const Home = () => {
 };
 
 const ProfileCard = styled.div`
-  height: 8rem;
+  height: 9rem;
   display: flex;
+ 
   transition: color 0.5s;
   color: ${(props) => props.theme.textStart};
 
@@ -85,17 +150,18 @@ const ProfileCard = styled.div`
     padding: 0;
     margin: 0;
   }
-
   .image-cropper {
+    display:none;
     box-sizing: border-box;
-    height: 8rem;
-    width: 8rem;
+    height: 16rem;
+    width: 15rem;
     background-image: url(${img});
     background-size: cover;
 
-    @media (max-width: 40rem) {
+    @media (max-width: 820px) {
       height: 7rem;
       width: 7rem;
+      display:block;
     }
 
     border-radius: 50%;
@@ -109,6 +175,7 @@ const ProfileCard = styled.div`
     }
   }
 
+  
   .hi {
     font-size: 2.2rem;
     letter-spacing: -0.1rem;
@@ -151,6 +218,7 @@ const ProfileCard = styled.div`
 const Introduction = styled.div`
   max-width: 34rem;
   transition: color 0.5s;
+
   color: ${(props) => props.theme.textStart};
 
   .short {
@@ -200,10 +268,11 @@ const Social = styled.div`
 
   @media (max-width: 40rem) {
     max-width: 20rem;
+    justify-content:center;
   }
 
   display: flex;
-  justify-content: center;
+  margin-left:1rem;
   gap: 0.5rem;
 
   @media (max-width: 40rem) {

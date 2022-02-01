@@ -2,12 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import {SiWhatsapp} from "react-icons/si";
+import {AiFillPhone} from "react-icons/ai";
 import "./contact.css";
  const Contact = ()=>{
   return(
       <div className='contactDiv'>
-
+     
         <div className='textDiv'><h1 className='title'>Contact</h1> </div> 
+        
     <Social>
      
     <div className="iconcontainer">
@@ -63,8 +65,23 @@ import "./contact.css";
 
      
     </div>
+    <div className="iconcontainer">
+      <a
+        className="same"
+        href=" tel:+917347530947"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Contact me here "
+      >
+        <AiFillPhone size="3rem" className="icon" />
+       
+      </a>
+
+     
+    </div>
     
   </Social>
+  <h3>I'm actively looking for any new opportunities, in full-stack web development.</h3>
   </div>
   );
 }
@@ -73,8 +90,8 @@ import "./contact.css";
 
 const Social = styled.div`
 
-margin-top:4rem;
-margin-bottom:10rem;
+margin-top:7rem;
+margin-bottom:3rem;
 justify-content:center;
   a {
     transition: color 0.5s;

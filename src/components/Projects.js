@@ -53,7 +53,11 @@ const ProjectsContainer = styled.div`
   .title {
     box-shadow: inset 0 -0.45em 0 ${(props) => props.theme.headerUnderline};
   }
+  width:78%;
 
+  margin:auto;
+  margin-bottom:7rem;
+ 
   h1 {
     font-size: 3rem;
     padding: 2rem;
@@ -64,6 +68,7 @@ const ProjectsContainer = styled.div`
       padding: 1.5rem;
       padding-top: 3rem;
     }
+    
   }
 `;
 
@@ -72,14 +77,33 @@ const Grid = styled.div`
   box-sizing: border-box;
   padding: 2rem;
 
+  width:90%;
+  margin:auto;
+
   @media (max-width: 40rem) {
     padding: 1.5rem;
   }
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, 17rem);
-  grid-auto-rows: 24rem;
-  grid-gap: 5rem;
+  grid-template-columns: 49% 49%;
+  grid-gap:1%;
+
+  @media (max-width: 1120px) {
+    
+    width:100%;
+    margin:auto;
+  }
+  @media (max-width: 850px) {
+     
+    grid-template-columns: 100%;
+
+  }
+  @media (max-width: 385px) {
+    
+      margin-left:-2rem;
+  }
+  
+
   justify-content: center;
 `;
 

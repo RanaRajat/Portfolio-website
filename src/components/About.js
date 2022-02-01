@@ -32,6 +32,8 @@ const About = () => {
 };
 
 const Container = styled.div`
+width:78%;
+margin:auto;
   .title {
     box-shadow: inset 0 -0.45em 0 ${(props) => props.theme.headerUnderline};
   }

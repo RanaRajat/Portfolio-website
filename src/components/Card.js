@@ -36,12 +36,13 @@ const Card = (props) => {
 
 const Container = styled.div`
   box-sizing: border-box;
+  width:22rem;
   margin: 0;
   padding: 0;
   box-shadow: 0 3px 6px -1px rgb(0 0 0 / 10%), 0 5px 10px -2px rgb(0 0 0 / 10%);
   text-align: left;
   border-radius: 0.5rem;
-  height: 100%;
+  height: 29rem;
   position: relative;
   overflow: hidden;
   background: ${(props) => props.theme.card};
@@ -49,9 +50,26 @@ const Container = styled.div`
     width: 100%;
     display: block;
     border-bottom: 1px solid #ccc;
-    height:10rem;
+    height:11.5rem;
   }
+  @media (max-width: 1037px) {
+     
+    width:18rem;
+    height: 26rem;
 
+  }
+  @media (max-width: 850px) {
+     
+    width:22rem;
+    height: 29rem;
+
+  }
+  @media (max-width: 475px) {
+    width:18rem;
+    height: 26rem;
+
+
+  }
   h2 {
     font-size: 1rem;
   }

@@ -6,7 +6,7 @@ const Footer = ({ location }) => {
   return (
     <Container>
       <Copyright location={location}>
-        <p>© 2022 Rajat Kumar</p>
+        <p>© Designed and build by Rajat Kumar, 2022 All rights reserved.</p>
       </Copyright>
       <Social location={location}>
         <a
@@ -55,7 +55,11 @@ const Copyright = styled.div`
 opacity: 0.5;
   color: ${(props) =>
     props.location ? props.theme.footer : props.theme.footerStart};
-`;
+
+    @media (max-width: 500px) {
+     font-size:smaller;
+    }
+    `;
 
 const Social = styled.div`
   a {
