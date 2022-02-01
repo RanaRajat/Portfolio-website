@@ -42,7 +42,7 @@ const Container = styled.div`
   box-shadow: 0 3px 6px -1px rgb(0 0 0 / 10%), 0 5px 10px -2px rgb(0 0 0 / 10%);
   text-align: left;
   border-radius: 0.5rem;
-  height: 29rem;
+  height: 27rem;
   position: relative;
   overflow: hidden;
   background: ${(props) => props.theme.card};
@@ -61,7 +61,7 @@ const Container = styled.div`
   @media (max-width: 850px) {
      
     width:22rem;
-    height: 29rem;
+    height: 27rem;
 
   }
   @media (max-width: 475px) {
@@ -114,14 +114,16 @@ const CardText = styled.div`
 `;
 
 const CardBody = styled.div`
-  height: calc(100% - 12rem - 1px);
+  height: 14rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 `;
 
 const ButtonArea = styled.div`
   display: grid;
+  
   padding: 0.5rem 1rem 1rem 1rem;
   //padding-top: 0.7rem;
   grid-template-columns: 1fr 1fr 1fr;
