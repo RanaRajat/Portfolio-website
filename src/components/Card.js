@@ -66,6 +66,12 @@ const Container = styled.div`
 
 
   }
+  @media (max-width: 340px) {
+    width:17rem;
+    height: 26rem;
+
+
+  }
   h2 {
     font-size: 1rem;
   }

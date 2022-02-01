@@ -162,6 +162,7 @@ const ProfileCard = styled.div`
       height: 7rem;
       width: 7rem;
       display:block;
+
     }
 
     border-radius: 50%;

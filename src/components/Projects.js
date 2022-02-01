@@ -101,7 +101,11 @@ const Grid = styled.div`
     
       margin-left:-2rem;
   }
-  
+  @media (max-width: 340px) {
+    margin-left:-3rem;
+
+
+  }
 
   justify-content: center;
 `;
