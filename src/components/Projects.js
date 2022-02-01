@@ -12,8 +12,7 @@ const Projects = () => {
         <Card
           img={require('../images/freshly.png')}
           title="Freshly Clone "
-          description="Freshly is a New York-based prepared meal delivery company that delivers throughout the United States 
-          where user can buy meals on the desired dates (solo project) "
+          description="It's a clone of a US based website ,in which user can buy different number of freshly prepared meals through the list of various items from different restaurants on desired dates. It was a solo project ."
           technologies="Javascript - HTML - CSS "
           link_two="https://frosty-neumann-1b644b.netlify.app"
           link_three="https://github.com/RanaRajat/freshly-website-clone"
@@ -23,7 +22,7 @@ const Projects = () => {
         <Card
           img={require('../images/lybrate.png')}
           title="Lybrate Clone"
-          description="Lybrate is the best online doctor consultation app that has revolutionized the way people in India .(Cloned by team of 6)"
+          description="It's a clone of online doctor consultation app In which user can buy medical products and also consult with doctors online.This project was done by team of 6."
           technologies="HTML CSS Javascript MongoDB Express.js Node.js Mongoose"
       
           link_two="https://m-sehrawat.github.io/Lybrate-Website-Clone/frontend/landingpage.html"
