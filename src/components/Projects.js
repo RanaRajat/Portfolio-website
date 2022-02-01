@@ -32,7 +32,7 @@ const Projects = () => {
           link_two_text="Visit"
           link_three_text="Github"
         />
-        <Card
+        {/* <Card
           img={require('../images/myglamm.png')}
           title="My Glamm Clone"
           description="MyGlamm is a beauty brand that offers an online beauty products marketplace 
@@ -43,7 +43,7 @@ const Projects = () => {
           link_three="https://github.com/RanaRajat/MyGlamm-with-Backend"
           link_two_text="Visit"
           link_three_text="Github"
-        />
+        /> */}
       </Grid>
     </ProjectsContainer>
   );
@@ -79,7 +79,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 17rem);
   grid-auto-rows: 24rem;
-  grid-gap: 2.5rem;
+  grid-gap: 5rem;
   justify-content: center;
 `;
 
