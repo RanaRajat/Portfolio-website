@@ -13,11 +13,7 @@ const Card = (props) => {
           <p className="technologies2">{props.technologies2}</p>
         </CardText>
         <ButtonArea>
-          {props.link_one ? (
-            <a className="link1" href={props.link_one} target="_blank"   rel="noopener noreferrer">
-              {props.link_one_text}
-            </a>
-          ) : null}
+          
           {props.link_two ? (
             <a className="link2" href={props.link_two} target="_blank"   rel="noopener noreferrer">
               {props.link_two_text}
@@ -122,17 +118,22 @@ const CardBody = styled.div`
 `;
 
 const ButtonArea = styled.div`
-  display: grid;
+  display: flex;
+  
+  width:60%;
+  margin:auto;
+  a{
+    width:6rem;
+    height:1rem;
+  }
   
   padding: 0.5rem 1rem 1rem 1rem;
   //padding-top: 0.7rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 'github website tutorial';
+  
+
   grid-gap: 0.5rem;
-  .link1 {
-    grid-area: github;
-  }
+
+  
   .link2 {
     grid-area: website;
   }
