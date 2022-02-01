@@ -59,25 +59,9 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
           >
            <a href='#home'>Home</a> 
           </MenuLink>
-          <MenuLink
+          
          
-            onClick={closeMenu}
-            scroll={scroll}
-            
-          >
-           <a href='#projects'>Projects</a> 
-           
-          </MenuLink>
-         
-          <MenuLink
-           
-            onClick={closeMenu}
-            scroll={scroll}
-            
-          >
-           <a href='#skills' >Skills</a> 
-            
-          </MenuLink>
+          
           <MenuLink
            
             onClick={closeMenu}
@@ -89,11 +73,36 @@ const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
           </MenuLink>
  
           <MenuLink
+           
+           onClick={closeMenu}
+           scroll={scroll}
+           
+         >
+          <a href='#skills' >Skills</a> 
+           
+         </MenuLink>
+
+          <MenuLink
+         
+         onClick={closeMenu}
+         scroll={scroll}
+         
+       >
+        <a href='#projects'>Projects</a> 
+        
+       </MenuLink>
+
+
+
+          <MenuLink
             
             onClick={closeMenu}
             scroll={scroll}
           
           >
+
+
+
            <a href={resumeLink} target="_blank"   rel="noopener noreferrer">Resume</a> 
             
           </MenuLink>

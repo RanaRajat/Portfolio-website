@@ -49,6 +49,7 @@ const Container = styled.div`
     width: 100%;
     display: block;
     border-bottom: 1px solid #ccc;
+    height:10rem;
   }
 
   h2 {

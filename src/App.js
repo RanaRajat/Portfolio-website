@@ -73,9 +73,11 @@ const App = () => {
           <main>
             <Content isOpen={isOpen}>
             <section id='home'><Home/></section>
+            <section id='about'><About/></section>
+            <section id='skills'><Skills/></section>
              <section id='projects'><Projects /></section>
-             <section id='skills'><Skills/></section>
-             <section id='about'><About/></section>
+             
+             
             
             <section id='contact'><Contact/></section>
       
