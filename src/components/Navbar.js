@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { IoSunny, IoMoon } from 'react-icons/io5';
 
-import resume from "/Rajat_Kumar.rk.pdf";
+import resume from "../Rajat_Kumar.rk.pdf";
 
 const Navbar = ({ isOpen, setIsOpen, theme, setTheme, scroll, location }) => {
   const themeToggler = () => {
